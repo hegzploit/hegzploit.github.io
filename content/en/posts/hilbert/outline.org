@@ -1,0 +1,21 @@
+#+TITLE: Outline
+
+* Back to Euclid
+** Solution of the parallel postulate in the 19th century
+*** Euclid's 5 postulates
+**** they all are intuitive except the 5th
+***** maybe cuz it has to do with infinity?
+**** can we deduce the 5th from the first 4 axioms?
+***** upon inverting the parallel postulate we get valid new geometry! (hyperbolic)
+***** so it's impossible to prove the fifth postualte
+***** meme
+* Reasons for axiomatizing geometry
+** Intuition is elastic faculty (https://books.google.com.eg/books?id=WgwUCgAAQBAJ)
+** We need more solid ground to base upon our systems
+** Not a safe guide that can be used to asses the truthfulness of science.
+** since a lot of people started questioning euclidean geometry, something had to be done
+
+* Hilbert's goal
+** he wanted to avoid intuition when reasoning about geometry
+** abstract
+** One must be able to say at all times – instead of points, straight lines, and planes – tables, chairs and beer mugs.

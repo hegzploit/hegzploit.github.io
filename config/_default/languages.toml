@@ -1,0 +1,13 @@
+[en]
+title = "Hegzploit"
+languageName = "English"
+weight = 1
+languagedir = "ltr"
+contentdir = "content/en"
+
+[ar]
+title = "المدونه العربيه"
+languageName = "Arabic"
+weight = 2
+languagedir = "rtl"
+contentdir = "content/ar"
