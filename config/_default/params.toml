@@ -4,7 +4,7 @@ description = ""
 custom_css = []
 custom_js = []
 useFaviconGenerator = true          # https://www.favicon-generator.org/
-meta_image = ""
+meta_image = "images/bongocat.png"
 themecolor = ""
 
 themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
@@ -94,7 +94,7 @@ typeIcon = "🎯"
 # whoami
 myname = "Yusuf Hegazy"
 email = "me@hegz.me"
-whoami = "ECE Seior Student | Security Researcher"
+whoami = "ECE Senior Student | Security Researcher"
 bioImageUrl = ""
 useGravatar = false
 location = "Cairo, Egypt"
