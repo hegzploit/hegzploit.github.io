@@ -4,6 +4,7 @@ date: 2022-04-10
 description: "I found a listing for a 2TB usb flash drive on AliExpress for less than $3 I bought It and after 24 days, I recieved my order and started analyzing it, little did I know a surprise was waiting for me."
 draft: false
 enableToc: false
+image: "images/thumbnails/badusb.png"
 ---
 
 ## First Impressions

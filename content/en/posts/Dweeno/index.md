@@ -8,6 +8,7 @@ description: "A hardware challenge where we're given some serial output from a A
 tags:
 - pwn
 - NahamCTF22
+image: "images/thumbnails/dweeno.png"
 ---
 
 <details>

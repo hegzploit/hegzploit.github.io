@@ -7,6 +7,7 @@ description: "A write-what-where scenario that enables us to overwrite the destr
 tags:
 - pwn
 - NahamCTF22
+image: "images/thumbnails/detour.png"
 ---
 
 ## Checksec

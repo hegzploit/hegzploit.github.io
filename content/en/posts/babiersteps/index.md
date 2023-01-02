@@ -8,6 +8,7 @@ enableTocContent: false
 tags:
 - pwn
 - NahamCTF22
+image: "images/thumbnails/babiersteps.png"
 ---
 
 ## Checksec

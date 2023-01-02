@@ -7,6 +7,7 @@ description: "A classic ret2shellcode with a twist, we use a gadget to execute o
 tags:
 - pwn
 - NahamCTF22
+image: "images/thumbnails/babysteps.png"
 ---
 
 
