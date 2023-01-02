@@ -1,10 +1,10 @@
-baseURL = "https://hegzploit.github.io"
+baseURL = ""
 title = "Hegzploit"
 theme = "zzo"
 
 
 defaultContentLanguage = "en"
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 hasCJKLanguage = true
 
 summaryLength = 70
