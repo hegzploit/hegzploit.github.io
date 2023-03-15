@@ -133,6 +133,7 @@ We were as surprised as you when we saw this, though when we reached out we didn
 ![dc22404d55b264d71f2e78d4bcf0ca9d.png](dc22404d55b264d71f2e78d4bcf0ca9d.png)
 
 We double checked the version of our solver script that we sent them in the last minute (they requested that all hackathon teams send their solver scripts via email so they can make sure of their solution's legitimacy) and we noticed that we did a last minute change to our solver and forgot to send them the new version of the script, It's literally two lines of code that were moved under a new scope, I even sent them the diff with the latest version after the deadline but I got ignored (what?), I think the organizers should have reached out to teams before disqualifying them. Unfortunately, there is a significant mistake with their judging process as they only assess submissions based on the code and do not consider other crucial factors such as the environment that the code ran in. Nonetheless, we do not care that much to be honest, as we enjoyed the journey regardless of the destination. Hopefully, the organizers will learn from their mistakes for next year's hackathon.
-
+{{< featuredImage alt="Literally Hacking the Hackathon" width=400 height=400 >}}
+ _mfw Literally Hacking the Hackathon_
 # Shoutouts
 Big shoutout to [Abdulrahman Wael](https://abdelrahman0w.github.io/), [Ibrahim Aboeleinen](https://aboueleyes.github.io/) and Maria Gamal It was very fun hacking together the last couple of days.
