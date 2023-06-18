@@ -5,13 +5,19 @@ url = "about"
 weight = 1
 
 [[main]]
+identifier = "writeups"
+name = "Writeups"
+url = "writeups"
+weight = 2
+
+[[main]]
 identifier = "archive"
 name = "Archive"
 url = "archive"
-weight = 2
+weight = 3
 
 [[main]]
 identifier = "talks"
 name = "Talks"
 url = "talks"
-reight = 3
+reight = 4
