@@ -1,7 +1,7 @@
 ---
 title:  "An Electrical Engineer's Adventure into the Deep Dark of AI"
 date:  2023-06-18
-draft:  true
+draft:  false
 enableToc: true
 description: "I talk about AI in the context of my graduation project."
 tags:
@@ -34,16 +34,38 @@ The following picture shows an overview of the first iteration of our project (y
 I will focus on the audio pipeline in this blog post, the image pipeline was the work of my dear friend Mostafa[^darsh].
 
 ## NLP in AI
-NLP is a very old problem, It involves the modeling of human speech into a form understandable by computers, after getting our audio into a state that is easy to work with, we need a way classify this audio which is of temporal nature (varies in time), hence we decomposed our problem into a classification problem, but the problem with data that has a temporal nature is it's causal nature.
+NLP has been a target of AI for a very long time, in the following paragraphs we will go through some of the history to get a better context on what we are currently targeting.
 
-{{< notice info "Causal Systems" >}}
-A causal system is one whose output depends only on the present and the past inputs.
-{{< /notice >}}
+Natural languge can be expressed in two main forms
+1. Text form
+2. Audio form
 
-This is where we start using the recurrent neural network to model our data, the RNN is a type of neural network that has feedback, this is neccessary to model temporal data since the network's output is always dependant on the past data, this network archeticture proved to be problematic when dealing with very large data sizes, this is due to the failure of the model to capture information that is far away from the current word due to the vanishing gradiennt problem[^vanishing_grad]
+both of these forms have one thing in common, their output depends on past input. modeling this type of systems is tricky, we need a model that can represent this causal relationship between the input and output.
+
+This is where we start using the recurrent neural network to model our data, the RNN is a type of neural network that has feedback, this is neccessary to model natural languge since the network's output depends on past input.
+![](rnn.png)
+
+This network archeticture proved to be problematic when dealing with very large data sizes, this is due to the failure of the model to capture information that is far away from the current word due to the vanishing gradiennt problem[^vanishing_grad]
 
 In 1997 a research paper was published that introduced a new RNN archeticture called the "Long Short-Term Memory" (LSTM), this archeticture dealt with the vanishing gradient problem by introducing a gating mechanism inside the cells of the network, this enables us to control the gradient flow within the cell so we can prevent the gradient from vanishing or exploding.
 
+Up to this point, we could use LSTMs to predict new data from past data, however we had always struggled with sequence to sequence learning, this was a very special task in NLP that involved transforming an input sequence to an output sequence. The most popular sequence to sequence task is machine translation where we transform a sequence of words in a certain language to another sequence of words in another language.
+
+In 2014, researchers from google published a paper that proposed a new network archeticture that could deal with sequence to sequence tasks, The encoder-decoder archeticture.
+
+> The idea is to use one LSTM, the encoder, to read the input sequence one timestep at a time, to obtain a large fixed dimensional vector representation (a context vector), and then to use another LSTM, the decoder, to extract the output sequence from that vector. The second LSTM is essentially a recurrent neural network language model except that it is conditioned on the input sequence.[^seq2seq]
+[^seq2seq]: https://paperswithcode.com/method/seq2seq
+
+## Beyond LSTMs: Attention and Transformers
+However, even though LSTMs could now capture longer dependencies and perform Seq2Seq tasks, they still struggled with keeping information for very long sequences, this was mainly due to the limited memory of LSTMs and their noise accumulation. 
+
+In 2014 too, a reasearch intern at the Montreal university published a paper where he proposed a new way to approach neural machine translation, The authors proposed a novel approach to address the limitation of the fixed-length context vector in the encoder-decoder architecture. Instead of relying solely on the final hidden state of the encoder, the attention mechanism allows the decoder to adaptively focus on different parts of the input sequence while generating the output sequence. This is done by learning a set of alignment weights between the input and output sequences, he called this new mechanism "Attention" and he achieved state-of-the-art translation performance with his archeticture.
+
+Everything up to this point still used LSTMs which wasn't all that great, we can observe that all the innovation that was done in 2014 was huge and it started adding components to the LSTM, a component for the encoder and decoder, another component for the attention mechanism. all of this was built on top of the trusty old LSTMs from the 97's.
+
+Three years into the future and we are now in 2017, eight researchers from google brain published a diruptive paper in the field of AI, they proposed yet another new archeticture that didn't add upon the LSTM as we have seen lately, instead, it stripped the LSTM component entirely from the network archeticture keeping the encoder-decoder structure and the attention mechanism, they named the paper "Attention is all you need" in which they introduced the "Transformer" archeticture.
+
+This change to the neural network has sol
 ## LSTM for audio classification
 After tedious days of data gathering, cleaning and labeling. we ended up with around 15 minutes of audio data, this seemed so little but we kept going anyway.
 
