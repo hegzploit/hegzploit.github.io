@@ -1,7 +1,7 @@
 ---
 title:  "An Electrical Engineer's Adventure into the Deep Dark of AI"
 date:  2023-06-18
-draft:  false
+draft:  true
 enableToc: true
 description: "I talk about AI in the context of my graduation project."
 tags:
