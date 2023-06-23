@@ -52,7 +52,7 @@ enablePinnedPosts = true
 minItemsToShowInTagCloud = 1             # Minimum items to show in tag cloud
 
 # appbar
-enableAppbarSearchIcon = false
+enableAppbarSearchIcon = true
 enableAppbarLangIcon = false
 
 # header
@@ -119,6 +119,7 @@ itemsPerCategory = 5
 sidebarPosition = "right"
 tocLevels = ["h2", "h3", "h4"]
 enableSidebarPostsByOrder = false
+enableSidebarFriendSites = true
 
 # footer
 showPoweredBy = false
@@ -244,3 +245,15 @@ link = ""
 [[footerLinks]]
 name = ""
 link = ""
+
+[[friend_sites]]
+  name = "Ahmed Khaled"
+  url = "http://blog.akhaled.net"
+  
+[[friend_sites]]
+  name = "Abo El-Einen"
+  url = "https://aboueleyes.github.io/"
+  
+[[friend_sites]]
+  name = "Karim Kohel"
+  url = "https://karimkohel.com/"

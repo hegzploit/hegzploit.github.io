@@ -40,6 +40,29 @@ NLP is a very old problem, It involves the modeling of human speech into a form 
 A causal system is one whose output depends only on the present and the past inputs.
 {{< /notice >}}
 
-A very special type of neural networks was born for this reason, the recurrent neural netowork. There is no one man behind inventing the RNNs but It was most likely all built upon the Ising model which is a mathematical model of ferromagnetism in statistical mechanics, this model consisted of variables that can represent magnetic dipole moments that can be in one of two states (+1 or -1), It also arranged the dipole moments in a graph, this represention is very similar to artificial neural networks that model the neurons in the brain, a neuron can have one of two states (active or inactive) and each neuron is connected to neighbouring neurons in a graph-like structure.
+This is where we start using the recurrent neural network to model our data, the RNN is a type of neural network that has feedback, this is neccessary to model temporal data since the network's output is always dependant on the past data, this network archeticture proved to be problematic when dealing with very large data sizes, this is due to the failure of the model to capture information that is far away from the current word due to the vanishing gradiennt problem[^vanishing_grad]
+
+In 1997 a research paper was published that introduced a new RNN archeticture called the "Long Short-Term Memory" (LSTM), this archeticture dealt with the vanishing gradient problem by introducing a gating mechanism inside the cells of the network, this enables us to control the gradient flow within the cell so we can prevent the gradient from vanishing or exploding.
+
+## LSTM for audio classification
+After tedious days of data gathering, cleaning and labeling. we ended up with around 15 minutes of audio data, this seemed so little but we kept going anyway.
+
+We kept experimenting with different model hyperparameters on a validation dataset but every single try showed a sign of overfitting, It became clear that we could no longer progress further with the little data that we have, and hence we started with plan B.
+
+![](overfit.jpg)
+
+## Plan B: Transformers
+I was always interested about transformers, I was initially planning to finetune a transcription model like whisper by OpenAI on the little data that I have, but I was very skeptical it would be make any difference If I trained it on 15 minutes, after looking around for the hottest finetuned models for the arabic language I saw the work of ArabML[^arabml] in the whisper fine-tuning event by huggingface, they had finetuned a model that achieved a WER of 12.0 and It was on an arabic dataset of Egyptian dialect[^whisper-model]!
+
+This was exactly what I needed so I started experimenting with the model through the free huggingface inference API, It didn't transcribe the incorrect words very accurately probably due to the normalization that is associated with automatic speech recoginition (ASR) models but It was something I could work with.
+
+I created a list of all the possible wrong words (that has articulation errors) that we will face along with the corresponding correct words, this can be shown from the below image.
+![](possible_words.jpg)
+
+After creating this list, we just feed the transcribed text to an algorithm that can find the closest match from our words list, this process is repeated for all the uttered words and we have a list of all the wrong words that was uttered along with their corresponding correct word. the difference between these two words will be the substited letter.
+[^whisper-model]: https://huggingface.co/Zaid/whisper-large-v2-ar
+[^arabml]: https://arbml.github.io/
+[^vanishing_grad]: https://en.wikipedia.org/wiki/Vanishing_gradient_problem
 [^attn_is_all_you_need]: https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
 [^darsh]: https://www.linkedin.com/in/mostafa-m-mokthar-7aa2a7192/
+

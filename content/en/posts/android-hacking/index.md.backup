@@ -1,0 +1,21 @@
+---
+title:  "A Journey Into Android Hacking"
+date:  2023-03-31
+draft:  false
+enableToc: true
+description: "In this blog I go over some of the lessons learned while tinkering with android application security."
+tags:
+- misc
+image: "images/thumbnails/dell.jpg"
+
+---
+
+I have been doing some research into android security lately, and It was quite *different* than anything I have tried before, the eco system was more friendly than I imagined, a lot of frameworks and tooling was availiable. I will try to document some lessons learned from my little trip so that anyone (including future me) can learn.
+
+## Initial Steps
+
+Before starting any android application analysis, I love to start with a simple run of `APKiD` which is the android counterpart of the popular `PEiD`, It will scan all the classes and libraries of the android apk revealing the presence of any packer or obfuscator. It uses yara rules [under the hood](https://github.com/rednaga/APKiD/tree/master/apkid/rules).
+
+![](/home/hegz/.config/marktext/images/2023-03-31-16-43-15-image.png)
+
+
