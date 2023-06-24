@@ -85,6 +85,7 @@ I'm going to quickly go over our experiments with training an LSTM classifier fo
 We wanted a model to identify the disorder from an audio sample (an uttered word in audio form). We had no data and couldn't find any Arabic audio data of children with articulation disorders online, so we started gathering data manually. We approached local medical centers and nurseries. After dealing with a lot of trouble trying to explain the project, getting consent from parents, and setting up our equipment, we started gathering data.
 
 Tedious days of data gathering went by. Initially, we had around 2 hours of raw recordings. Then came cleaning, which was followed by labeling, which we split amongst our team. We ended up with around 15 minutes of audio data :loudly_crying_face:. This seemed so little, but we kept going anyway.
+{{< img src="/images/posts/gp/cuties.png" caption="data gathering adventures!" width="500px" position="center" >}}
 
 We kept experimenting with different model hyperparameters on our dataset, but every single try showed a sign of overfitting. It became clear that we could no longer progress further with the little data that we have, and hence we started with plan B.
 
