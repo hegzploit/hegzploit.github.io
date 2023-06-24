@@ -108,4 +108,15 @@ This pipeline was implemented in Python with a simple Flask frontend. You can fi
 ## Special Thanks
 I would like to thank everyone who has helped me with this small research project, and especially my team for being such strong supporters during our journey. I am also grateful for their patience with my frequent tantrums throughout the past year, so a huge thanks go to both [Mostafa](https://www.linkedin.com/in/mostafa-m-mokthar-7aa2a7192/) and [Seif](https://www.linkedin.com/in/seif-amr-41405a27a/)!
 
+{{< img src="/images/posts/gp/team.jpeg" caption="Mostafa, Me and Seif after our thesis presentation and defense. (from right to left)" width="300px" position="center" >}}
+
 Additionally, I would love to thank [Mohey](https://www.linkedin.com/in/mohamed-mohey-1454ba202/) for being an awesome, well-rounded nerd. Credit goes to him for the crazy ASR transformer idea. I truly enjoyed our discussions and learned a lot from them.
+
+Finally, thanks to our project advisor, Dr. Mohamed Safy, for supporting our project and for connecting us with medical specialists whom we consulted during our project.
+
+{{< img src="/images/posts/gp/pic_with_dr.jpeg" caption="Me with Dr. Safy" width="300px" position="center" >}}
+
+## Bonus
+
+excerpt from my presentation
+{{< youtube NQoI9Zt-Ukw  >}}
