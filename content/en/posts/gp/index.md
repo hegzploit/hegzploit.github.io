@@ -112,6 +112,8 @@ I would like to thank everyone who has helped me with this small research projec
 
 Additionally, I would love to thank [Mohey](https://www.linkedin.com/in/mohamed-mohey-1454ba202/) for being an awesome, well-rounded nerd. Credit goes to him for the crazy ASR transformer idea. I truly enjoyed our discussions and learned a lot from them.
 
+Thanks to ARABML community for their astounding open-source research, and specifically their whisperar initiative and models which I have used within my project.
+
 Finally, thanks to our project advisor, Dr. Mohamed Safy, for supporting our project and for connecting us with medical specialists whom we consulted during our project.
 
 {{< img src="/images/posts/gp/pic_with_dr.jpeg" caption="Me with Dr. Safy" width="300px" position="center" >}}
