@@ -8,9 +8,10 @@ description: "I talk about AI and NLP in the context of my graduation project."
 tags:
 - misc
 image: "images/thumbnails/gp.jpeg"
-libraries:
-- katex
 ---
+
+This is a blog post about my graduation project, where I went for a little dive within the scary realm of AI. I had zero practical experience with AI prior and had only a minimal theoretical understanding of some concepts. While this work may not seem like much, this was a rough ride for me, and I can confidently say that it was worth it. I couldn't have had the opportunity to do this type of work otherwise, and I will probably not touch AI at this level anytime soon. This is basically a brain dump of some of my thoughts, including an explanation of my project so I can have some peace of mind and move on.
+{{< img src="/images/posts/gp/honest_work.jpg" width="500px" position="center" >}}
 
 ## Introduction
 Artificial Intelligence has been prevalent lately. This can be accounted for many reasons, but the most important is Moore's Law. The amount of compute power available to the average user, let alone big corporations such as Microsoft and Facebook, is way more than what we could get in the '90s.
@@ -107,6 +108,11 @@ After creating this list, we just feed the transcribed text to an algorithm[^lev
 {{< img src="/images/posts/gp/deployment.png" caption="screenshot of the frontend" width="500px" position="center" >}}
 
 This pipeline was implemented in Python with a simple Flask frontend. You can find all the corresponding code in my GitHub repo MAD-Whisper[^repo].
+
+## Special Thanks
+I would like to thank everyone who has helped me with this small research project, and especially my team for being such strong supporters during our journey. I am also grateful for their patience with my frequent tantrums throughout the past year, so a huge thanks go to both Mostafa[^darsh] and Seif[^bazooka]!
+
+Additionally, I would love to thank Mohey[^mohey] for being an awesome, well-rounded nerd. Credit goes to him for the crazy ASR transformer approach. I truly enjoyed our discussions and learned a lot from them.
 
 [^repo]: https://github.com/hegzploit/MAD-Whisper
 [^levenshtein]: https://en.wikipedia.org/wiki/Levenshtein_distance
