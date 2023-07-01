@@ -3,11 +3,11 @@ title:  "A Journey into Mathematical Logic: Diophantus of Alexandria"
 date:  2021-04-01T20:19:31+02:00
 enableToc:  true
 description: "In this series of blog posts, I will be discussing some of my favorite topics in math, It mostly falls under the domains of mathematical logic and computability theory."
-libraries:
-- mathjax
 tags:
 - math
 image: "images/header/diophantus_header.jpg"
+libraries:
+- katex
 ---
 
 In this series of blog posts, I will be discussing some of my favorite topics in math, It mostly falls under the domains of mathematical logic and computability theory.
