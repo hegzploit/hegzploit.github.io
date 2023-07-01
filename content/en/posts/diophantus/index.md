@@ -7,7 +7,7 @@ tags:
 - math
 image: "images/header/diophantus_header.jpg"
 libraries:
-- katex
+- mathjax
 ---
 
 In this series of blog posts, I will be discussing some of my favorite topics in math, It mostly falls under the domains of mathematical logic and computability theory.

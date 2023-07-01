@@ -8,7 +8,7 @@ tags:
 - misc
 image: "images/thumbnails/dell.jpg"
 libraries:
-- katex
+- mathjax
 ---
 Are you ready to put your coding skills to the ultimate test? Hacktrick is the hackathon that combines AI, problem-solving, and cybersecurity to create a thrilling challenge. The landing page promises a rescue mission, but the real magic happens behind the scenes. As the competition heats up, we quickly realize that coding tricks alone won't guarantee a win. The question is, will we figure out the winning formula before the time runs out?
 
