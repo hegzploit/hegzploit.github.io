@@ -98,7 +98,6 @@ whoami = "Binary Exploitation and Hardware Security Enthusiast"
 bioImageUrl = "images/whoami/avatar.jpg"
 useGravatar = false
 location = "Cairo, Egypt"
-organization = ""
 link = "https://hegz.io"
 
 # sidebar
@@ -117,7 +116,7 @@ tocPosition = "outer"             # inner, outer
 enableTocSwitch = true
 itemsPerCategory = 5
 sidebarPosition = "right"
-tocLevels = ["h2", "h3", "h4"]
+tocLevels = ["h1", "h2", "h3", "h4"]
 enableSidebarPostsByOrder = false
 enableSidebarFriendSites = true
 
@@ -245,6 +244,10 @@ link = ""
 [[footerLinks]]
 name = ""
 link = ""
+
+[[friend_sites]]
+  name = "Satharus"
+  url = "https://satharus.me/"
 
 [[friend_sites]]
   name = "Ahmed Khaled"
