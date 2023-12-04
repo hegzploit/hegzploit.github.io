@@ -14,6 +14,9 @@ In this blog post, we'll explore three challenges from the "Not Vulnerability Re
 
 I managed to solve the first challenge during the CTF, and solved the remaining two afterwards. Be sure to check out [the official writeup by the author](https://wr3nchsr.github.io/cyctf-low-budget-router-trilogy-writeup/). As of writing this, I haven't read the author's writeup to avoid being influenced by the intended solutions. Instead, I'll guide you through my methodology and approach for solving these three challenges. Expect a long (but fun) ride, so prepare a cup of tea and enjoy the read!
 
+{{< notice info "Router Firmware Download" >}}
+You can download a copy of the challenge files which includes the router firmware from [here](/bin/low-budget-router.zip)
+{{</notice>}}
 ## Challenge 1 - Firmware Dump
 ![](image-7.png)
 The first challenge is under the `forensics` category and It mentions a firmware dump, `SNANDer` and a datasheet, I downloaded the challenge files anyway, and I could find the following file structure:
