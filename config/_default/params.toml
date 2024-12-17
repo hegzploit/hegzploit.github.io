@@ -93,11 +93,11 @@ typeIcon = "🎯"
 
 # whoami
 myname = "Yusuf Hegazy"
-email = "me@hegz.io"
-whoami = "Binary Exploitation and Hardware Security Enthusiast"
+email = "me AT this domain"
+whoami = "Security Researcher currently pursuing my PhD in Hardware Security"
 bioImageUrl = "images/whoami/avatar.jpg"
 useGravatar = false
-location = "Cairo, Egypt"
+location = "West Midlands, England"
 link = "https://hegz.io"
 
 # sidebar
