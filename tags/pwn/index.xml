@@ -1,13 +1,250 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>pwn on Hegzploit</title><link>https://hegzploit.github.io/tags/pwn/</link><description>Recent content in pwn on Hegzploit</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>me@hegz.io (Yusuf Hegazy)</managingEditor><webMaster>me@hegz.io (Yusuf Hegazy)</webMaster><copyright>©2024, All Rights Reserved</copyright><lastBuildDate>Thu, 19 May 2022 00:00:00 +0000</lastBuildDate><sy:updatePeriod>weekly</sy:updatePeriod><atom:link href="https://hegzploit.github.io/tags/pwn/index.xml" rel="self" type="application/rss+xml"/><item><title>Once upon a Segfault</title><link>https://hegzploit.github.io/talks/once_upon_a_segfault/</link><pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate><author>me@hegz.io (Yusuf Hegazy)</author><atom:modified>Thu, 19 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/talks/once_upon_a_segfault/</guid><description>Slides: https://hegz.me/binex.pdf</description><dc:creator>Yusuf Hegazy</dc:creator><category>pwn</category></item><item><title>Babiersteps</title><link>https://hegzploit.github.io/writeups/babiersteps/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me@hegz.io (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/babiersteps/</guid><description>Checksec Canary : ✘ NX : ✓ PIE : ✘ Fortify : ✘ RelRO : Full We only care about the stack canary as we will be overflowing RIP to control execution flow, and thankfully It&amp;rsquo;s disabled.
-Exploitation 1. RIP Control We overflow the binary with a cyclic pattern, however, for this being a 64-bit binary we can&amp;rsquo;t overflow RIP with a non-canonical address.
-Canonical Address An address is said to be canonical in the 64-bit world when the upper 16 bits are copies of the 48th bit.</description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.ioimages/thumbnails/babiersteps.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category></item><item><title>Babysteps</title><link>https://hegzploit.github.io/writeups/babysteps/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me@hegz.io (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/babysteps/</guid><description>Checksec It&amp;rsquo;s an aboslute mess, nothing is turned on fortunately :)
-Canary : ✘ NX : ✘ PIE : ✘ Fortify : ✘ RelRO : Partial Exploitation 1. EIP Control We obtain our offset very easily in GEF.
-2. Exploitation We start by analyzing the stack at the overflown state.
-Looking at the registers, It appears that only two registers point to our stack. eax and esp.
-We search for gadgets jumping to any of these registers.</description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.ioimages/thumbnails/babysteps.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category></item><item><title>Detour</title><link>https://hegzploit.github.io/writeups/detour/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me@hegz.io (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/detour/</guid><description>Checksec Canary : ✓ NX : ✓ PIE : ✘ Fortify : ✘ RelRO : ✘ RelRO is completely disabled unlike any other challenge we have encountered, this means that we have write permessions to all the relocations.
-Exploitation Running the binary will let us specify an address and a value and then It will assign that value to the adderss we provided.
-hegz@pop-os$ ./detour What: 1234 Where: 123123123213 Segmentation fault (core dumped) I confirmed this by analyzing the binary in ghidra, below is the decompilation.</description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.ioimages/thumbnails/detour.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category></item><item><title>Dweeno</title><link>https://hegzploit.github.io/writeups/dweeno/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me@hegz.io (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/dweeno/</guid><description>Serial Output 00110011 00111001 00110100 00110010 00101110 00110100 01100100 01100011 00110111 01101101 01100101 01100111 01100010 00110110 00110011 01100110 01100010 01100001 00110111 01100100 01100100 01100000 00110011 01100010 00110110 01100110 00110000 01100111 00110011 01100011 01100111 01100111 00110001 01101101 01100001 00110111 00110110 00101000 Wiring Diagram Arduino Code 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 char * flag = &amp;#34;REDACTED&amp;#34;; String curr, first, second; int in1=29, in2=27, in3=25, in4=23; int out1=53, out2=51, out3=49, out4=47; int i; String get_output(String bits) { String output; digitalWrite(out1, ((bits[0] == &amp;#39;1&amp;#39;)?</description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.ioimages/thumbnails/dweeno.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category><category>Hardware</category></item><item><title>Leaky Pipe - 0xL4ugh CTF</title><link>https://hegzploit.github.io/writeups/leaky-pipe/</link><pubDate>Sun, 17 Jan 2021 19:07:42 +0200</pubDate><author>me@hegz.io (Yusuf Hegazy)</author><atom:modified>Sun, 17 Jan 2021 19:07:42 +0200</atom:modified><guid>https://hegzploit.github.io/writeups/leaky-pipe/</guid><description>In this challenge we recieved a binary in which we are asked to exploit and somehow retrieve the flag.
-you can find the binary for this challenge here
-Initial Analysis We start by running the binary and checking it behavior.
-./leaky_pipe We have just fixed the plumbing systm, let&amp;#39;s hope there&amp;#39;s no leaks! &amp;gt;.&amp;gt; aaaaah shiiit wtf is dat address doin here... 0x7ffde7760410 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA &amp;lt;--- our input Segmentation fault (core dumped) And as we see, we can already get a segfault by spamming some A&amp;rsquo;s in the input.</description><dc:creator>Yusuf Hegazy</dc:creator><category>pwn</category></item><item><title>Trigger Happy - 0xL4ugh CTF</title><link>https://hegzploit.github.io/writeups/trigger-happy/</link><pubDate>Sat, 16 Jan 2021 16:33:49 +0200</pubDate><author>me@hegz.io (Yusuf Hegazy)</author><atom:modified>Sat, 16 Jan 2021 16:33:49 +0200</atom:modified><guid>https://hegzploit.github.io/writeups/trigger-happy/</guid><description>It was the first ever pwn challenge I solve in a CTF and I really liked it hence I wanted to bring it to this CTF (you can even check my poorly written writeup for that challenge which I refuse to remove as It&amp;rsquo;s pretty awesome to look back and see how much did we grow).
-You can check my video on format string vulnerabilies as a refresher for these types of attacks (It&amp;rsquo;s in arabic tho).</description><dc:creator>Yusuf Hegazy</dc:creator><category>pwn</category></item><item><title>Not Really AI - RA CTF</title><link>https://hegzploit.github.io/writeups/notreallyai/</link><pubDate>Mon, 08 Jun 2020 07:22:58 +0000</pubDate><author>me@hegz.io (Yusuf Hegazy)</author><atom:modified>Mon, 08 Jun 2020 07:22:58 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/notreallyai/</guid><description>Misusage of the libc printf() function can lead to serious information leakage and even code execution. when we pass one argument (for example printf(foo)) we can: leak stack addresses using %x or %p format specifiers. overwrite any pointer&amp;rsquo;s value using %n specifier (note that we can&amp;rsquo;t overwrite plain stack addresses as the %n format specifier can only overwrite by reference and not by value) For more information on format strings please check this awesome resource</description><dc:creator>Yusuf Hegazy</dc:creator><category>pwn</category></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Pwn on Hegzploit</title><link>https://hegzploit.github.io/tags/pwn/</link><description>Recent content in Pwn on Hegzploit</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>me AT this domain (Yusuf Hegazy)</managingEditor><webMaster>me AT this domain (Yusuf Hegazy)</webMaster><copyright>©2024, All Rights Reserved</copyright><lastBuildDate>Thu, 19 May 2022 00:00:00 +0000</lastBuildDate><sy:updatePeriod>weekly</sy:updatePeriod><atom:link href="https://hegzploit.github.io/tags/pwn/index.xml" rel="self" type="application/rss+xml"/><item><title>Once upon a Segfault</title><link>https://hegzploit.github.io/talks/once_upon_a_segfault/</link><pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate><author>me AT this domain (Yusuf Hegazy)</author><atom:modified>Thu, 19 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/talks/once_upon_a_segfault/</guid><description>&lt;style>
+.vid {
+aspect-ratio: 16 / 9;
+width: 100%;
+}
+&lt;/style>
+&lt;iframe class="vid" width="560" height="315"
+src="https://www.youtube.com/embed/BDJNLVV2vHU" title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture" allowfullscreen>&lt;/iframe>
+&lt;p>Slides: &lt;a href="https://hegz.me/binex.pdf">https://hegz.me/binex.pdf&lt;/a>&lt;/p></description><dc:creator>Yusuf Hegazy</dc:creator><category>pwn</category></item><item><title>Babiersteps</title><link>https://hegzploit.github.io/writeups/babiersteps/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me AT this domain (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/babiersteps/</guid><description>&lt;h2 id="checksec">Checksec&lt;/h2>
+&lt;pre tabindex="0">&lt;code>Canary : ✘
+NX : ✓
+PIE : ✘
+Fortify : ✘
+RelRO : Full
+&lt;/code>&lt;/pre>&lt;p>We only care about the stack canary as we will be overflowing RIP to control execution flow, and thankfully It&amp;rsquo;s disabled.&lt;/p>
+&lt;h2 id="exploitation">Exploitation&lt;/h2>
+&lt;h3 id="1-rip-control">1. RIP Control&lt;/h3>
+&lt;p>We overflow the binary with a cyclic pattern, however, for this being a 64-bit binary we can&amp;rsquo;t overflow RIP with a non-canonical address.&lt;/p>
+&lt;div class="expand">
+&lt;button type="button" class="expand__button" aria-label="Expand Button">
+&lt;span class="expand-icon expand-icon__right">
+&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">&lt;path fill="currentColor" d="M9.29 15.88L13.17 12 9.29 8.12c-.39-.39-.39-1.02 0-1.41.39-.39 1.02-.39 1.41 0l4.59 4.59c.39.39.39 1.02 0 1.41L10.7 17.3c-.39.39-1.02.39-1.41 0-.38-.39-.39-1.03 0-1.42z"/>&lt;/svg>
+&lt;/span>
+Canonical Address
+&lt;/button>
+&lt;div class="expand__content">
+An address is said to be canonical in the 64-bit world when the upper 16 bits are copies of the 48th bit.
+&lt;/div>
+&lt;/div>
+&lt;p>The easiest way to find the RIP offset without overflowing RIP is by breaking at the &lt;code>ret&lt;/code> instruction and searching for our pattern in &lt;code>rsp&lt;/code>.&lt;/p></description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/thumbnails/babiersteps.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category></item><item><title>Babysteps</title><link>https://hegzploit.github.io/writeups/babysteps/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me AT this domain (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/babysteps/</guid><description>&lt;h2 id="checksec">Checksec&lt;/h2>
+&lt;p>It&amp;rsquo;s an aboslute mess, nothing is turned on fortunately :)&lt;/p>
+&lt;pre tabindex="0">&lt;code>Canary : ✘
+NX : ✘
+PIE : ✘
+Fortify : ✘
+RelRO : Partial
+&lt;/code>&lt;/pre>&lt;h2 id="exploitation">Exploitation&lt;/h2>
+&lt;h3 id="1-eip-control">1. EIP Control&lt;/h3>
+&lt;p>We obtain our offset very easily in GEF.&lt;br />
+&lt;img src="https://hegzploit.github.io/writeups/babysteps/babysteps_offset.png" alt="">&lt;/p>
+&lt;center>
+&lt;p>&lt;img src="https://hegzploit.github.io/img/ach_offset.png" alt="">&lt;/p>
+&lt;/center>
+&lt;h3 id="2-exploitation">2. Exploitation&lt;/h3>
+&lt;p>We start by analyzing the stack at the overflown state.&lt;br />
+&lt;img src="https://hegzploit.github.io/writeups/babysteps/babysteps_stackstate.png" alt="">&lt;/p>
+&lt;p>Looking at the registers, It appears that only two registers point to our stack. &lt;code>eax&lt;/code> and &lt;code>esp&lt;/code>.&lt;/p>
+&lt;p>We search for gadgets jumping to any of these registers.&lt;/p></description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/thumbnails/babysteps.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category></item><item><title>Detour</title><link>https://hegzploit.github.io/writeups/detour/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me AT this domain (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/detour/</guid><description>&lt;h2 id="checksec">Checksec&lt;/h2>
+&lt;pre tabindex="0">&lt;code>Canary : ✓
+NX : ✓
+PIE : ✘
+Fortify : ✘
+RelRO : ✘
+&lt;/code>&lt;/pre>&lt;p>RelRO is completely disabled unlike any other challenge we have encountered, this means that we have write permessions to all the relocations.&lt;/p>
+&lt;h2 id="exploitation">Exploitation&lt;/h2>
+&lt;p>Running the binary will let us specify an address and a value and then It will assign that value to the adderss we provided.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hegz@pop-os$ ./detour
+What: 1234
+Where: 123123123213
+Segmentation fault (core dumped)
+&lt;/code>&lt;/pre>&lt;p>I confirmed this by analyzing the binary in ghidra, below is the decompilation.&lt;/p></description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/thumbnails/detour.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category></item><item><title>Dweeno</title><link>https://hegzploit.github.io/writeups/dweeno/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me AT this domain (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/dweeno/</guid><description>&lt;details>
+&lt;summary> Serial Output&lt;/summary>
+&lt;pre tabindex="0">&lt;code>00110011
+00111001
+00110100
+00110010
+00101110
+00110100
+01100100
+01100011
+00110111
+01101101
+01100101
+01100111
+01100010
+00110110
+00110011
+01100110
+01100010
+01100001
+00110111
+01100100
+01100100
+01100000
+00110011
+01100010
+00110110
+01100110
+00110000
+01100111
+00110011
+01100011
+01100111
+01100111
+00110001
+01101101
+01100001
+00110111
+00110110
+00101000
+&lt;/code>&lt;/pre>&lt;/details>
+&lt;details>
+&lt;summary> Wiring Diagram&lt;/summary>
+&lt;p>&lt;img src="https://hegzploit.github.io/writeups/dweeno/sketch.jpg" alt="">&lt;/p>
+&lt;/details>
+&lt;details>
+&lt;summary> Arduino Code&lt;/summary>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;span class="lnt">33
+&lt;/span>&lt;span class="lnt">34
+&lt;/span>&lt;span class="lnt">35
+&lt;/span>&lt;span class="lnt">36
+&lt;/span>&lt;span class="lnt">37
+&lt;/span>&lt;span class="lnt">38
+&lt;/span>&lt;span class="lnt">39
+&lt;/span>&lt;span class="lnt">40
+&lt;/span>&lt;span class="lnt">41
+&lt;/span>&lt;span class="lnt">42
+&lt;/span>&lt;span class="lnt">43
+&lt;/span>&lt;span class="lnt">44
+&lt;/span>&lt;span class="lnt">45
+&lt;/span>&lt;span class="lnt">46
+&lt;/span>&lt;span class="lnt">47
+&lt;/span>&lt;span class="lnt">48
+&lt;/span>&lt;span class="lnt">49
+&lt;/span>&lt;span class="lnt">50
+&lt;/span>&lt;span class="lnt">51
+&lt;/span>&lt;span class="lnt">52
+&lt;/span>&lt;span class="lnt">53
+&lt;/span>&lt;span class="lnt">54
+&lt;/span>&lt;span class="lnt">55
+&lt;/span>&lt;span class="lnt">56
+&lt;/span>&lt;span class="lnt">57
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="kt">char&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">flag&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;REDACTED&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">String&lt;/span> &lt;span class="n">curr&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">first&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">second&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">in1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">29&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">in2&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">27&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">in3&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">25&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">in4&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">23&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">out1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">53&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">out2&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">51&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">out3&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">49&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">out4&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">47&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">String&lt;/span> &lt;span class="nf">get_output&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">String&lt;/span> &lt;span class="n">bits&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">String&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">digitalWrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="n">bits&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="sc">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">?&lt;/span> &lt;span class="nl">HIGH&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">LOW&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">digitalWrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="n">bits&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="sc">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">?&lt;/span> &lt;span class="nl">HIGH&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">LOW&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">digitalWrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="n">bits&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="sc">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">?&lt;/span> &lt;span class="nl">HIGH&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">LOW&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">digitalWrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="n">bits&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="sc">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">?&lt;/span> &lt;span class="nl">HIGH&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">LOW&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">delay&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">digitalRead&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in1&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">digitalRead&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in2&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">digitalRead&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in3&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">digitalRead&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in4&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//converts a given number into binary
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">String&lt;/span> &lt;span class="nf">binary&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">number&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">String&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="s">&amp;#34;0&amp;#34;&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="s">&amp;#34;1&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">number&lt;/span> &lt;span class="o">/=&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">length&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;0&amp;#34;&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">setup&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">OUTPUT&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">OUTPUT&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">OUTPUT&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">OUTPUT&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">INPUT&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">INPUT&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">INPUT&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">INPUT&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Serial&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">9600&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">loop&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">strlen&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">curr&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">binary&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">first&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">curr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">substring&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">second&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">curr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">substring&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">8&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Serial&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">get_output&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">first&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Serial&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">get_output&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">second&lt;/span>&lt;span class="p">));&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">delay&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/details>
+&lt;p>Looking at the code we can break it down into a couple of steps:&lt;/p></description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/thumbnails/dweeno.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category><category>Hardware</category></item><item><title>Leaky Pipe - 0xL4ugh CTF</title><link>https://hegzploit.github.io/writeups/leaky-pipe/</link><pubDate>Sun, 17 Jan 2021 19:07:42 +0200</pubDate><author>me AT this domain (Yusuf Hegazy)</author><atom:modified>Sun, 17 Jan 2021 19:07:42 +0200</atom:modified><guid>https://hegzploit.github.io/writeups/leaky-pipe/</guid><description>&lt;p>In this challenge we recieved a binary in which we are asked to exploit and somehow retrieve the flag.&lt;br />
+you can find the binary for this challenge &lt;a href="https://github.com/hegzploit/0xL4ugh-Pwn-Challs">here&lt;/a>&lt;/p>
+&lt;h2 id="initial-analysis">Initial Analysis&lt;/h2>
+&lt;p>We start by running the binary and checking it behavior.&lt;/p>
+&lt;pre tabindex="0">&lt;code>./leaky_pipe
+We have just fixed the plumbing systm, let&amp;#39;s hope there&amp;#39;s no leaks!
+&amp;gt;.&amp;gt; aaaaah shiiit wtf is dat address doin here... 0x7ffde7760410
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA &amp;lt;--- our input
+Segmentation fault (core dumped)
+&lt;/code>&lt;/pre>&lt;p>And as we see, we can already get a segfault by spamming some A&amp;rsquo;s in the input.&lt;/p></description><dc:creator>Yusuf Hegazy</dc:creator><category>pwn</category></item><item><title>Trigger Happy - 0xL4ugh CTF</title><link>https://hegzploit.github.io/writeups/trigger-happy/</link><pubDate>Sat, 16 Jan 2021 16:33:49 +0200</pubDate><author>me AT this domain (Yusuf Hegazy)</author><atom:modified>Sat, 16 Jan 2021 16:33:49 +0200</atom:modified><guid>https://hegzploit.github.io/writeups/trigger-happy/</guid><description>&lt;p>It was the first ever pwn challenge I solve in a CTF and I really liked it hence I wanted to bring it to this CTF (you can even check my poorly written writeup for that challenge which I refuse to remove as It&amp;rsquo;s pretty awesome to look back and see how much did we grow).&lt;/p>
+&lt;p>You can check my video on format string vulnerabilies as a refresher for these types of attacks (It&amp;rsquo;s in arabic tho).&lt;/p></description><dc:creator>Yusuf Hegazy</dc:creator><category>pwn</category></item><item><title>Not Really AI - RA CTF</title><link>https://hegzploit.github.io/writeups/notreallyai/</link><pubDate>Mon, 08 Jun 2020 07:22:58 +0000</pubDate><author>me AT this domain (Yusuf Hegazy)</author><atom:modified>Mon, 08 Jun 2020 07:22:58 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/notreallyai/</guid><description>&lt;ul>
+&lt;li>Misusage of the libc &lt;code>printf()&lt;/code> function can lead to serious information leakage and even code execution.&lt;/li>
+&lt;li>when we pass one argument (for example &lt;code>printf(foo)&lt;/code>) we can:
+&lt;ul>
+&lt;li>leak stack addresses using &lt;code>%x&lt;/code> or &lt;code>%p&lt;/code> format specifiers.&lt;/li>
+&lt;li>overwrite any pointer&amp;rsquo;s value using &lt;code>%n&lt;/code> specifier (note that we can&amp;rsquo;t overwrite plain stack addresses as the %n format specifier can only overwrite by reference and not by value)&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>For more information on format strings please check &lt;a href="http://www.cis.syr.edu/~wedu/Teaching/cis643/LectureNotes_New/Format_String.pdf">this awesome resource&lt;/a>&lt;/p></description><dc:creator>Yusuf Hegazy</dc:creator><category>pwn</category></item></channel></rss>
