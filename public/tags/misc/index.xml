@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Misc on Hegzploit</title>
+    <link>http://localhost:1313/tags/misc/</link>
+    <description>Recent content in Misc on Hegzploit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>me (AT) this domain (Yusuf Hegazy)</managingEditor>
+    <webMaster>me (AT) this domain (Yusuf Hegazy)</webMaster>
+    <copyright>©2024, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 18 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <sy:updatePeriod>weekly</sy:updatePeriod>
+    
+        <atom:link href="http://localhost:1313/tags/misc/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>An Electrical Engineer&#39;s Adventure into the Deep Dark of AI</title>
+        <link>http://localhost:1313/posts/gp/</link>
+        <pubDate>Sun, 18 Jun 2023 00:00:00 +0000</pubDate>
+        <author>me (AT) this domain (Yusuf Hegazy)</author>
+        <atom:modified>Sun, 18 Jun 2023 00:00:00 +0000</atom:modified>
+        <guid>http://localhost:1313/posts/gp/</guid>
+        <description>&lt;p&gt;This is a blog post about my graduation project, where I went for a little dive within the scary realm of AI. I had zero practical experience with AI prior and had only a minimal theoretical understanding of some concepts. While this work may not seem like much, this was a rough ride for me, and I can confidently say that it was worth it. I couldn&amp;rsquo;t have had the opportunity to do this type of work otherwise, and I will probably not touch AI at this level anytime soon. This is basically a brain dump of some of my thoughts, including an explanation of my project so I can have some peace of mind and move on.&lt;br /&gt;
+&lt;figure &gt;
+  
+  
+  
+    &lt;img data-src=&#34;http://localhost:1313/images/posts/gp/honest_work.jpg&#34;  data-caption=&#34;&#34; src=&#34;data:image/svg+xml,%0A%3Csvg xmlns=&#39;http://www.w3.org/2000/svg&#39; width=&#39;500px&#39; height=&#39;&#39; viewBox=&#39;0 0 24 24&#39;%3E%3Cpath fill=&#39;none&#39; d=&#39;M0 0h24v24H0V0z&#39;/%3E%3Cpath fill=&#39;%23aaa&#39; d=&#39;M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-1 16H6c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v12c0 .55-.45 1-1 1zm-4.44-6.19l-2.35 3.02-1.56-1.88c-.2-.25-.58-.24-.78.01l-1.74 2.23c-.26.33-.02.81.39.81h8.98c.41 0 .65-.47.4-.8l-2.55-3.39c-.19-.26-.59-.26-.79 0z&#39;/%3E%3C/svg%3E&#34; class=&#34;lazyload&#34; style=&#34;width:500px;height:;&#34;/&gt;
+  
+
+  
+  
+&lt;/figure&gt;&lt;/p&gt;</description>
+        
+        <dc:creator>Yusuf Hegazy</dc:creator>
+        <media:content url="http://localhost:1313/images/thumbnails/gp.jpeg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>misc</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Hacking the Hackathon: How We Optimized Our Way to Third Place</title>
+        <link>http://localhost:1313/posts/hacking-the-hackathon/</link>
+        <pubDate>Wed, 15 Mar 2023 00:00:00 +0000</pubDate>
+        <author>me (AT) this domain (Yusuf Hegazy)</author>
+        <atom:modified>Wed, 15 Mar 2023 00:00:00 +0000</atom:modified>
+        <guid>http://localhost:1313/posts/hacking-the-hackathon/</guid>
+        <description>&lt;p&gt;Are you ready to put your coding skills to the ultimate test? Hacktrick is the hackathon that combines AI, problem-solving, and cybersecurity to create a thrilling challenge. The landing page promises a rescue mission, but the real magic happens behind the scenes. As the competition heats up, we quickly realize that coding tricks alone won&amp;rsquo;t guarantee a win. The question is, will we figure out the winning formula before the time runs out?&lt;/p&gt;</description>
+        
+        <dc:creator>Yusuf Hegazy</dc:creator>
+        <media:content url="http://localhost:1313/images/thumbnails/dell.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>misc</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

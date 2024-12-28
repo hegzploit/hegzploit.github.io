@@ -20,36 +20,34 @@ enableGitInfo = false
 googleAnalytics = "UA-184239437-2"
 
 [markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      hardWraps = true
-      unsafe = true
-      xHTML = true
-  [markup.highlight]
-    codeFences = true
-    lineNos = true
-    lineNumbersInTable = true
-    noClasses = false
-  [markup.tableOfContents]
-    endLevel = 4
-    ordered = false
-    startLevel = 2
+[markup.goldmark]
+[markup.goldmark.renderer]
+hardWraps = true
+unsafe = true
+xHTML = true
+[markup.highlight]
+codeFences = true
+lineNos = true
+lineNumbersInTable = true
+noClasses = false
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 2
 
 [outputs]
-  home = ["HTML", "RSS", "SearchIndex"]
-  section = ["HTML", "RSS", "SearchIndex"]
-  taxonomyTerm = ["HTML", "RSS", "SearchIndex"]
-  taxonomy = ["HTML", "RSS", "SearchIndex"]
+home = ["HTML", "RSS", "SearchIndex"]
+section = ["HTML", "RSS", "SearchIndex"]
+taxonomy = ["HTML", "RSS", "SearchIndex"]
 
 [outputFormats]
-  [outputFormats.SearchIndex]
-    mediaType = "application/json"
-    baseName = "index"
-    isPlainText = true
-    notAlternative = true
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "index"
+isPlainText = true
+notAlternative = true
 
 [taxonomies]
-  category = "categories"
-  tag = "tags"
-  series = "series"
-
+category = "categories"
+tag = "tags"
+series = "series"
