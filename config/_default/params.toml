@@ -9,40 +9,40 @@ themecolor = ""
 
 themeOptions = ["dark", "light", "hacker", "solarized", "kimbie"]
 notAllowedTypesInHome = [
-  "contact",
-  "talks",
-  "about",
-  "showcase",
-  "publication",
-  "presentation",
-  "resume",
+    "contact",
+    "talks",
+    "about",
+    "showcase",
+    "publication",
+    "presentation",
+    "resume",
 ]
 notAllowedTypesInHomeSidebar = [
-  "about",
-  "archive",
-  "showcase",
-  "publication",
-  "presentation",
-  "resume",
+    "about",
+    "archive",
+    "showcase",
+    "publication",
+    "presentation",
+    "resume",
 ]
 notAllowedTypesInArchive = [
-  "about",
-  "talks",
-  "showcase",
-  "publication",
-  "presentation",
-  "resume",
+    "about",
+    "talks",
+    "showcase",
+    "publication",
+    "presentation",
+    "resume",
 ]
 notAllowedTypesInHomeFeed = [
-  "about",
-  "archive",
-  "contact",
-  "talks",
-  "showcase",
-  "publication",
-  "presentation",
-  "resume",
-  "gallery",
+    "about",
+    "archive",
+    "contact",
+    "talks",
+    "showcase",
+    "publication",
+    "presentation",
+    "resume",
+    "gallery",
 ]
 
 viewportSize = "normal"                  # widest, wider, wide, normal, narrow
@@ -93,7 +93,7 @@ typeIcon = "🎯"
 
 # whoami
 myname = "Yusuf Hegazy"
-email = "me AT this domain"
+email = "me (AT) this domain"
 whoami = "Security Researcher currently pursuing my PhD in Hardware Security"
 bioImageUrl = "images/whoami/avatar.jpg"
 useGravatar = false
@@ -112,7 +112,7 @@ enableListSidebarTitles = true
 enableToc = false
 hideToc = false
 tocFolding = false
-tocPosition = "outer"             # inner, outer
+tocPosition = "outer"                # inner, outer
 enableTocSwitch = true
 itemsPerCategory = 5
 sidebarPosition = "right"
@@ -246,17 +246,17 @@ name = ""
 link = ""
 
 [[friend_sites]]
-  name = "Satharus"
-  url = "https://satharus.me/"
+name = "Satharus"
+url = "https://satharus.me/"
 
 [[friend_sites]]
-  name = "Ahmed Khaled"
-  url = "http://blog.akhaled.net"
-  
+name = "Ahmed Khaled"
+url = "http://blog.akhaled.net"
+
 [[friend_sites]]
-  name = "Abo El-Einen"
-  url = "https://aboueleyes.github.io/"
-  
+name = "Abo El-Einen"
+url = "https://aboueleyes.github.io/"
+
 [[friend_sites]]
-  name = "Karim Kohel"
-  url = "https://karimkohel.com/"
+name = "Karim Kohel"
+url = "https://karimkohel.com/"
