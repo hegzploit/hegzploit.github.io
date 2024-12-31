@@ -2,7 +2,7 @@
 &lt;div class="box">You will find all the challenge files on &lt;a href="https://github.com/hegzploit/0xL4ugh24_HW_Challs">this repo&lt;/a>, at the end of the blog I will list some notable writeups by players who have completed this challenge.&lt;/div>
 &lt;p>&lt;img src="https://hegzploit.github.io/posts/0xl4ugh24-hw-writeups/assets/challs.jpg" alt="">&lt;/p>
 &lt;h2 id="tempus">Tempus&lt;/h2>
-&lt;div class="box">&lt;em>Summary:&lt;/em> Timing side channel attack allows us to bruteforce the pin digit by digit reducing the keyspace significantly (from 10^9 to 10*9).&lt;/div>
+&lt;div class="box">&lt;strong>Summary:&lt;/strong> Timing side channel attack allows us to bruteforce the pin digit by digit reducing the keyspace significantly (from 10^9 to 10*9).&lt;/div>
 &lt;div class="notices info" data-title="Fun fact">
 Tempus is the latin word for time
 &lt;/div>
