@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Hardware on Hegzploit</title>
+    <link>http://localhost:1313/tags/hardware/</link>
+    <description>Recent content in Hardware on Hegzploit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>me (AT) this domain (Yusuf Hegazy)</managingEditor>
+    <webMaster>me (AT) this domain (Yusuf Hegazy)</webMaster>
+    <copyright>©2025, All Rights Reserved</copyright>
+    <lastBuildDate>Sat, 28 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <sy:updatePeriod>weekly</sy:updatePeriod>
+    
+        <atom:link href="http://localhost:1313/tags/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>0xL4ugh24 Hardware Challenges Official Writeups</title>
+        <link>http://localhost:1313/posts/0xl4ugh24-hw-writeups/</link>
+        <pubDate>Sat, 28 Dec 2024 00:00:00 +0000</pubDate>
+        <author>me (AT) this domain (Yusuf Hegazy)</author>
+        <atom:modified>Sat, 28 Dec 2024 00:00:00 +0000</atom:modified>
+        <guid>http://localhost:1313/posts/0xl4ugh24-hw-writeups/</guid>
+        <description>&lt;p&gt;Lately, I have been doing some hardware security research, specifically focusing on side channel stuff, this inspired me to write these challenges for the 0xL4ugh CTF.&lt;/p&gt;
+&lt;div class=&#34;box&#34;&gt;You will find all the challenge files on &lt;a href=&#34;https://github.com/hegzploit/0xL4ugh24_HW_Challs&#34;&gt;this repo&lt;/a&gt;, at the end of the blog I will list some notable writeups by players who have completed this challenge.&lt;/div&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/posts/0xl4ugh24-hw-writeups/assets/challs.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tempus&#34;&gt;Tempus&lt;/h2&gt;
+&lt;div class=&#34;box&#34;&gt;&lt;strong&gt;Summary:&lt;/strong&gt; Timing side channel attack allows us to bruteforce the pin digit by digit reducing the keyspace significantly (from 10^9 to 10*9).&lt;/div&gt;
+&lt;div class=&#34;notices info&#34; data-title=&#34;Fun fact&#34;&gt;
+  Tempus is the latin word for time
+&lt;/div&gt;
+&lt;br&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/posts/0xl4ugh24-hw-writeups/assets/tempus-desc.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+        
+        <dc:creator>Yusuf Hegazy</dc:creator>
+        <media:content url="http://localhost:1313/images/thumbnails/0xl4ugh24-hw2.jpeg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>hardware</category>
+            
+          
+            
+              <category>SCA</category>
+            
+          
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Low Budget Router</title>
+        <link>http://localhost:1313/posts/lbr/</link>
+        <pubDate>Sun, 03 Dec 2023 00:00:00 +0000</pubDate>
+        <author>me (AT) this domain (Yusuf Hegazy)</author>
+        <atom:modified>Sun, 03 Dec 2023 00:00:00 +0000</atom:modified>
+        <guid>http://localhost:1313/posts/lbr/</guid>
+        <description>&lt;p&gt;In this blog post, we&amp;rsquo;ll explore three challenges from the &amp;ldquo;Not Vulnerability Research&amp;rdquo; category in CyCTF&#39;23, held in Cairo ICT.&lt;/p&gt;
+&lt;p&gt;I managed to solve the first challenge during the CTF, and solved the remaining two afterwards. Be sure to check out &lt;a href=&#34;https://wr3nchsr.github.io/cyctf-low-budget-router-trilogy-writeup/&#34;&gt;the official writeup by the author&lt;/a&gt;. As of writing this, I haven&amp;rsquo;t read the author&amp;rsquo;s writeup to avoid being influenced by the intended solutions. Instead, I&amp;rsquo;ll guide you through my methodology and approach for solving these three challenges. Expect a long (but fun) ride, so prepare a cup of tea and enjoy the read!&lt;/p&gt;</description>
+        
+        <dc:creator>Yusuf Hegazy</dc:creator>
+        <media:content url="http://localhost:1313/images/thumbnails/lbr.png" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>hardware</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

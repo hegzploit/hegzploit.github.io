@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>CTF on Hegzploit</title>
+    <link>http://localhost:1313/tags/ctf/</link>
+    <description>Recent content in CTF on Hegzploit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>me (AT) this domain (Yusuf Hegazy)</managingEditor>
+    <webMaster>me (AT) this domain (Yusuf Hegazy)</webMaster>
+    <copyright>©2025, All Rights Reserved</copyright>
+    <lastBuildDate>Sun, 05 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <sy:updatePeriod>weekly</sy:updatePeriod>
+    
+        <atom:link href="http://localhost:1313/tags/ctf/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Reactive Vault 1</title>
+        <link>http://localhost:1313/posts/reactive-vault-1/</link>
+        <pubDate>Sun, 05 Nov 2023 00:00:00 +0000</pubDate>
+        <author>me (AT) this domain (Yusuf Hegazy)</author>
+        <atom:modified>Sun, 05 Nov 2023 00:00:00 +0000</atom:modified>
+        <guid>http://localhost:1313/posts/reactive-vault-1/</guid>
+        <description>&lt;p&gt;I started by installing the APK on an android phone, once opened it will show a text field to enter a key and a login button, the APK will try to navigate to &lt;code&gt;https://you-shall-not-pass&lt;/code&gt; when trying to type any key (maybe this was done to prevent bruteforcing the key?), finally, when you try to login with a random key It will show a dialog saying &amp;ldquo;BAAAD Key&amp;rdquo;&lt;/p&gt;
+&lt;center&gt;
+&lt;video controls loop width=&#34;320&#34;&gt;
+    &lt;source src=&#34;./demo.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;/center&gt;
+&lt;p&gt;I dropped the APK within jadx and I went to the entry point which is &lt;code&gt;com.expor4bb1t.AwesomeProject.MainActivity&lt;/code&gt;, I could see a lot of imports related to facebook and react, which along with the challenge name, started making sense. This application is built with react native.&lt;/p&gt;</description>
+        
+        <dc:creator>Yusuf Hegazy</dc:creator>
+        <media:content url="http://localhost:1313/images/thumbnails/reactive-vault.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>CTF</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>

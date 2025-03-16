@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Talks on Hegzploit</title>
+    <link>http://localhost:1313/talks/</link>
+    <description>Recent content in Talks on Hegzploit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>me (AT) this domain (Yusuf Hegazy)</managingEditor>
+    <webMaster>me (AT) this domain (Yusuf Hegazy)</webMaster>
+    <copyright>©2025, All Rights Reserved</copyright>
+    <lastBuildDate>Mon, 30 Dec 2019 11:14:14 +0900</lastBuildDate>
+    <sy:updatePeriod>weekly</sy:updatePeriod>
+    
+        <atom:link href="http://localhost:1313/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+
+      
+      <item>
+        <title>Getting Started with Cybersecurity</title>
+        <link>http://localhost:1313/talks/how2hack/</link>
+        <pubDate>Sat, 01 Oct 2022 00:00:00 +0000</pubDate>
+        <author>me (AT) this domain (Yusuf Hegazy)</author>
+        <atom:modified>Sat, 01 Oct 2022 00:00:00 +0000</atom:modified>
+        <guid>http://localhost:1313/talks/how2hack/</guid>
+        <description>&lt;p&gt;Recording is sadly corrup, here&amp;rsquo;s the slides.&lt;br /&gt;
+Slides: &lt;a href=&#34;https://hegz.me/how2hack.pdf&#34;&gt;https://hegz.me/how2hack.pdf&lt;/a&gt;&lt;/p&gt;</description>
+        
+        <dc:creator>Yusuf Hegazy</dc:creator>
+        
+        
+        
+        
+        
+        
+      </item>
+      
+      <item>
+        <title>Once upon a Segfault</title>
+        <link>http://localhost:1313/talks/once_upon_a_segfault/</link>
+        <pubDate>Thu, 19 May 2022 00:00:00 +0000</pubDate>
+        <author>me (AT) this domain (Yusuf Hegazy)</author>
+        <atom:modified>Thu, 19 May 2022 00:00:00 +0000</atom:modified>
+        <guid>http://localhost:1313/talks/once_upon_a_segfault/</guid>
+        <description>&lt;style&gt;
+.vid {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+&lt;/style&gt;
+&lt;iframe class=&#34;vid&#34; width=&#34;560&#34; height=&#34;315&#34;
+src=&#34;https://www.youtube.com/embed/BDJNLVV2vHU&#34; title=&#34;YouTube video player&#34;
+frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; clipboard-write;
+encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;Slides: &lt;a href=&#34;https://hegz.me/binex.pdf&#34;&gt;https://hegz.me/binex.pdf&lt;/a&gt;&lt;/p&gt;</description>
+        
+        <dc:creator>Yusuf Hegazy</dc:creator>
+        
+        
+        
+        
+          
+            
+              <category>pwn</category>
+            
+          
+        
+        
+        
+      </item>
+      
+
+    
+  </channel>
+</rss>
