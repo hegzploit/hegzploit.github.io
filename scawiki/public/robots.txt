@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: hegz.io/sitemap.xml
+Sitemap: hegz.io/scawiki/sitemap.xml
