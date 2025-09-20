@@ -20,7 +20,12 @@
         <a class="brand" href="#top" aria-label="THE HOTSPOT home">
           <img src="logos/icon.png" alt="THE HOTSPOT icon" class="brand-mark" />
         </a>
-        <nav class="site-nav" aria-label="Main">
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <nav class="site-nav" id="site-menu" aria-label="Main">
           <a href="#about">About</a>
           <a href="#programs">Programs</a>
           <a href="#people">People</a>
@@ -209,6 +214,40 @@
     </footer>
 
     <script>
+      // Mobile nav toggle
+      (function initMobileNav(){
+        const header = document.querySelector('.site-header');
+        const toggle = document.querySelector('.menu-toggle');
+        const menu = document.getElementById('site-menu');
+        if (!header || !toggle || !menu) return;
+
+        function setOpen(isOpen){
+          header.classList.toggle('nav-open', isOpen);
+          toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+
+        toggle.addEventListener('click', ()=>{
+          const open = header.classList.contains('nav-open');
+          setOpen(!open);
+        });
+
+        // Close on escape
+        document.addEventListener('keydown', (e)=>{
+          if (e.key === 'Escape') setOpen(false);
+        });
+
+        // Close when clicking a link (better UX)
+        menu.addEventListener('click', (e)=>{
+          const a = e.target.closest('a');
+          if (a) setOpen(false);
+        });
+
+        // Close if resized to desktop
+        const mql = window.matchMedia('(min-width: 820px)');
+        function onChange(){ if (mql.matches) setOpen(false); }
+        mql.addEventListener ? mql.addEventListener('change', onChange) : mql.addListener(onChange);
+      })();
+
       document.getElementById('year').textContent = new Date().getFullYear();
 
       (function initSlideshow(){
