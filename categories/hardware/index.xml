@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Hardware on Hegzploit</title><link>https://hegzploit.github.io/categories/hardware/</link><description>Recent content in Hardware on Hegzploit</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>me (AT) this domain (Yusuf Hegazy)</managingEditor><webMaster>me (AT) this domain (Yusuf Hegazy)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sun, 01 May 2022 00:00:00 +0000</lastBuildDate><sy:updatePeriod>weekly</sy:updatePeriod><atom:link href="https://hegzploit.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>Dweeno</title><link>https://hegzploit.github.io/writeups/dweeno/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/dweeno/</guid><description>&lt;details>
-&lt;summary> Serial Output&lt;/summary>
-&lt;pre tabindex="0">&lt;code>00110011
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Hardware on Hegzploit</title><link>https://hegzploit.github.io/categories/hardware/</link><description>Recent content in Hardware on Hegzploit</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>me (AT) this domain (Yusuf Hegazy)</managingEditor><webMaster>me (AT) this domain (Yusuf Hegazy)</webMaster><copyright>&amp;copy;{year}, All Rights Reserved</copyright><lastBuildDate>Sun, 01 May 2022 00:00:00 +0000</lastBuildDate><sy:updatePeriod>weekly</sy:updatePeriod><atom:link href="https://hegzploit.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml"/><item><title>Dweeno</title><link>https://hegzploit.github.io/writeups/dweeno/</link><pubDate>Sun, 01 May 2022 00:00:00 +0000</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Sun, 01 May 2022 00:00:00 +0000</atom:modified><guid>https://hegzploit.github.io/writeups/dweeno/</guid><description>&lt;details&gt;
+&lt;summary&gt; Serial Output&lt;/summary&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;00110011
 00111001
 00110100
 00110010
@@ -38,132 +38,132 @@
 00110111
 00110110
 00101000
-&lt;/code>&lt;/pre>&lt;/details>
-&lt;details>
-&lt;summary> Wiring Diagram&lt;/summary>
-&lt;p>&lt;img src="https://hegzploit.github.io/writeups/dweeno/sketch.jpg" alt="">&lt;/p>
-&lt;/details>
-&lt;details>
-&lt;summary> Arduino Code&lt;/summary>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;span class="lnt">30
-&lt;/span>&lt;span class="lnt">31
-&lt;/span>&lt;span class="lnt">32
-&lt;/span>&lt;span class="lnt">33
-&lt;/span>&lt;span class="lnt">34
-&lt;/span>&lt;span class="lnt">35
-&lt;/span>&lt;span class="lnt">36
-&lt;/span>&lt;span class="lnt">37
-&lt;/span>&lt;span class="lnt">38
-&lt;/span>&lt;span class="lnt">39
-&lt;/span>&lt;span class="lnt">40
-&lt;/span>&lt;span class="lnt">41
-&lt;/span>&lt;span class="lnt">42
-&lt;/span>&lt;span class="lnt">43
-&lt;/span>&lt;span class="lnt">44
-&lt;/span>&lt;span class="lnt">45
-&lt;/span>&lt;span class="lnt">46
-&lt;/span>&lt;span class="lnt">47
-&lt;/span>&lt;span class="lnt">48
-&lt;/span>&lt;span class="lnt">49
-&lt;/span>&lt;span class="lnt">50
-&lt;/span>&lt;span class="lnt">51
-&lt;/span>&lt;span class="lnt">52
-&lt;/span>&lt;span class="lnt">53
-&lt;/span>&lt;span class="lnt">54
-&lt;/span>&lt;span class="lnt">55
-&lt;/span>&lt;span class="lnt">56
-&lt;/span>&lt;span class="lnt">57
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-c++" data-lang="c++">&lt;span class="line">&lt;span class="cl">&lt;span class="kt">char&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">flag&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;REDACTED&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">String&lt;/span> &lt;span class="n">curr&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">first&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">second&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">in1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">29&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">in2&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">27&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">in3&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">25&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">in4&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">23&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">out1&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">53&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">out2&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">51&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">out3&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">49&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">out4&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">47&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">String&lt;/span> &lt;span class="nf">get_output&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">String&lt;/span> &lt;span class="n">bits&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">String&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">digitalWrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="n">bits&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="sc">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">?&lt;/span> &lt;span class="nl">HIGH&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">LOW&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">digitalWrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="n">bits&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="sc">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">?&lt;/span> &lt;span class="nl">HIGH&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">LOW&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">digitalWrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="n">bits&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="sc">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">?&lt;/span> &lt;span class="nl">HIGH&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">LOW&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">digitalWrite&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="n">bits&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="sc">&amp;#39;1&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">?&lt;/span> &lt;span class="nl">HIGH&lt;/span> &lt;span class="p">:&lt;/span> &lt;span class="n">LOW&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">delay&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">digitalRead&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in1&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">digitalRead&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in2&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">digitalRead&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in3&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">output&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="n">String&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">digitalRead&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in4&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">output&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//converts a given number into binary
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">String&lt;/span> &lt;span class="nf">binary&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">number&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">String&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span>&lt;span class="o">!=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">number&lt;/span> &lt;span class="o">%&lt;/span> &lt;span class="mi">2&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="s">&amp;#34;0&amp;#34;&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="s">&amp;#34;1&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">number&lt;/span> &lt;span class="o">/=&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span> &lt;span class="p">((&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">length&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="mi">8&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">r&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;0&amp;#34;&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="n">r&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">setup&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">OUTPUT&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">OUTPUT&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">OUTPUT&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">out4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">OUTPUT&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">INPUT&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">INPUT&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">INPUT&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pinMode&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">in4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">INPUT&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Serial&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">begin&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">9600&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">void&lt;/span> &lt;span class="nf">loop&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">strlen&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="p">))&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">curr&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">binary&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">first&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">curr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">substring&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">second&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">curr&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">substring&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="mi">8&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Serial&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">get_output&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">first&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Serial&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">get_output&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">second&lt;/span>&lt;span class="p">));&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">delay&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">1000&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;/details>
-&lt;p>Looking at the code we can break it down into a couple of steps:&lt;/p></description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/thumbnails/dweeno.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category><category>Hardware</category></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt; Wiring Diagram&lt;/summary&gt;
+&lt;p&gt;&lt;img src="https://hegzploit.github.io/writeups/dweeno/sketch.jpg" alt=""&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+&lt;summary&gt; Arduino Code&lt;/summary&gt;
+&lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
+&lt;table class="lntable"&gt;&lt;tr&gt;&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code&gt;&lt;span class="lnt"&gt; 1
+&lt;/span&gt;&lt;span class="lnt"&gt; 2
+&lt;/span&gt;&lt;span class="lnt"&gt; 3
+&lt;/span&gt;&lt;span class="lnt"&gt; 4
+&lt;/span&gt;&lt;span class="lnt"&gt; 5
+&lt;/span&gt;&lt;span class="lnt"&gt; 6
+&lt;/span&gt;&lt;span class="lnt"&gt; 7
+&lt;/span&gt;&lt;span class="lnt"&gt; 8
+&lt;/span&gt;&lt;span class="lnt"&gt; 9
+&lt;/span&gt;&lt;span class="lnt"&gt;10
+&lt;/span&gt;&lt;span class="lnt"&gt;11
+&lt;/span&gt;&lt;span class="lnt"&gt;12
+&lt;/span&gt;&lt;span class="lnt"&gt;13
+&lt;/span&gt;&lt;span class="lnt"&gt;14
+&lt;/span&gt;&lt;span class="lnt"&gt;15
+&lt;/span&gt;&lt;span class="lnt"&gt;16
+&lt;/span&gt;&lt;span class="lnt"&gt;17
+&lt;/span&gt;&lt;span class="lnt"&gt;18
+&lt;/span&gt;&lt;span class="lnt"&gt;19
+&lt;/span&gt;&lt;span class="lnt"&gt;20
+&lt;/span&gt;&lt;span class="lnt"&gt;21
+&lt;/span&gt;&lt;span class="lnt"&gt;22
+&lt;/span&gt;&lt;span class="lnt"&gt;23
+&lt;/span&gt;&lt;span class="lnt"&gt;24
+&lt;/span&gt;&lt;span class="lnt"&gt;25
+&lt;/span&gt;&lt;span class="lnt"&gt;26
+&lt;/span&gt;&lt;span class="lnt"&gt;27
+&lt;/span&gt;&lt;span class="lnt"&gt;28
+&lt;/span&gt;&lt;span class="lnt"&gt;29
+&lt;/span&gt;&lt;span class="lnt"&gt;30
+&lt;/span&gt;&lt;span class="lnt"&gt;31
+&lt;/span&gt;&lt;span class="lnt"&gt;32
+&lt;/span&gt;&lt;span class="lnt"&gt;33
+&lt;/span&gt;&lt;span class="lnt"&gt;34
+&lt;/span&gt;&lt;span class="lnt"&gt;35
+&lt;/span&gt;&lt;span class="lnt"&gt;36
+&lt;/span&gt;&lt;span class="lnt"&gt;37
+&lt;/span&gt;&lt;span class="lnt"&gt;38
+&lt;/span&gt;&lt;span class="lnt"&gt;39
+&lt;/span&gt;&lt;span class="lnt"&gt;40
+&lt;/span&gt;&lt;span class="lnt"&gt;41
+&lt;/span&gt;&lt;span class="lnt"&gt;42
+&lt;/span&gt;&lt;span class="lnt"&gt;43
+&lt;/span&gt;&lt;span class="lnt"&gt;44
+&lt;/span&gt;&lt;span class="lnt"&gt;45
+&lt;/span&gt;&lt;span class="lnt"&gt;46
+&lt;/span&gt;&lt;span class="lnt"&gt;47
+&lt;/span&gt;&lt;span class="lnt"&gt;48
+&lt;/span&gt;&lt;span class="lnt"&gt;49
+&lt;/span&gt;&lt;span class="lnt"&gt;50
+&lt;/span&gt;&lt;span class="lnt"&gt;51
+&lt;/span&gt;&lt;span class="lnt"&gt;52
+&lt;/span&gt;&lt;span class="lnt"&gt;53
+&lt;/span&gt;&lt;span class="lnt"&gt;54
+&lt;/span&gt;&lt;span class="lnt"&gt;55
+&lt;/span&gt;&lt;span class="lnt"&gt;56
+&lt;/span&gt;&lt;span class="lnt"&gt;57
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class="lntd"&gt;
+&lt;pre tabindex="0" class="chroma"&gt;&lt;code class="language-c++" data-lang="c++"&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;flag&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;REDACTED&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;curr&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;second&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;in1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;29&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;in2&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;27&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;in3&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;25&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;in4&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;23&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;out1&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;53&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;out2&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;51&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;out3&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;49&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;out4&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;47&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;get_output&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;bits&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;bits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="sc"&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="nl"&gt;HIGH&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;LOW&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;bits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="sc"&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="nl"&gt;HIGH&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;LOW&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;bits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="sc"&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="nl"&gt;HIGH&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;LOW&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;digitalWrite&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="n"&gt;bits&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="sc"&gt;&amp;#39;1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="nl"&gt;HIGH&lt;/span&gt; &lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="n"&gt;LOW&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;digitalRead&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;in1&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;digitalRead&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;in2&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;digitalRead&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;in3&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;output&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;digitalRead&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;in4&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;output&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;//converts a given number into binary
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="c1"&gt;&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="nf"&gt;binary&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;number&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;String&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;number&lt;/span&gt;&lt;span class="o"&gt;!=&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="o"&gt;%&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;0&amp;#34;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;1&amp;#34;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;number&lt;/span&gt; &lt;span class="o"&gt;/=&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;while&lt;/span&gt; &lt;span class="p"&gt;((&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;length&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;r&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#34;0&amp;#34;&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;setup&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;OUTPUT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;OUTPUT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;OUTPUT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;out4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;OUTPUT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;in1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;INPUT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;in2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;INPUT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;in3&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;INPUT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;pinMode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;in4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;INPUT&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;9600&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;loop&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="n"&gt;strlen&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;flag&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;curr&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;binary&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;flag&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="p"&gt;]);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;first&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;curr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;substring&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;second&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;curr&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;substring&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;8&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;get_output&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;first&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;Serial&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;get_output&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;second&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;delay&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1000&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;++&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt; &lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class="line"&gt;&lt;span class="cl"&gt;&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/details&gt;
+&lt;p&gt;Looking at the code we can break it down into a couple of steps:&lt;/p&gt;</description><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/thumbnails/dweeno.png" medium="image"><media:title type="html">featured image</media:title></media:content><category>pwn</category><category>NahamCTF22</category><category>Hardware</category></item></channel></rss>
