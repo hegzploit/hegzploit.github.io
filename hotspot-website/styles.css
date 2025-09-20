@@ -12,6 +12,8 @@
   --gap: 24px;
   --display: "Abril Fatface", "Times New Roman", Times, serif;
   --body: "Cantata One", Georgia, serif;
+  /* Background noise controls */
+  --noise-opacity: 0.06; /* tweak intensity */
 }
 
 * { box-sizing: border-box; }
@@ -23,6 +25,19 @@ body {
   background: var(--black);
   color: var(--text);
   line-height: 1.6;
+}
+
+/* Subtle tiled white-noise overlay on top of black background */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none; /* don't block clicks */
+  background-image: url('assets/white-noise-bg.png');
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: var(--noise-opacity);
+  z-index: 1; /* below header (z=10), above page content */
 }
 
 img { max-width: 100%; display: block; }
@@ -43,7 +58,7 @@ a { color: var(--text); text-decoration: none; }
 .menu-toggle:hover { border-color: #2a2a2a; background: #141414; color: var(--orange); }
 
 .site-nav { display: flex; align-items: center; gap: 8px; }
-.site-nav a { color: var(--text); padding: 10px 12px; border-radius: 0; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; }
+.site-nav a { color: var(--text); padding: 10px 12px; border-radius: 0; font-weight: 900; letter-spacing: 0.02em; text-transform: uppercase; font-family: "Merriweather", Georgia, serif; }
 .site-nav a:hover { background: #0f0f0f; }
 .site-nav .cta { background: var(--orange); color: #000; border: 2px solid var(--orange); }
 .site-nav .cta:hover { background: var(--orange-700); border-color: var(--orange-700); }
@@ -57,7 +72,7 @@ a { color: var(--text); text-decoration: none; }
 .lead { color: var(--muted); font-size: clamp(16px, 2.5vw, 18px); margin: 0 0 20px; }
 
 .actions { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 18px; border-radius: 0; border: 2px solid #1f1f1f; background: #0d0d0d; color: var(--text); font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 18px; border-radius: 0; border: 2px solid #1f1f1f; background: #0d0d0d; color: var(--text); font-weight: 900; text-transform: uppercase; letter-spacing: 0.02em; font-family: "Merriweather", Georgia, serif; }
 .btn:hover { border-color: #2a2a2a; background: #141414; }
 .btn.primary { background: var(--orange); border-color: var(--orange); color: #000; }
 .btn.primary:hover { background: var(--orange-700); border-color: var(--orange-700); }
