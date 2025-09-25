@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+  xmlns:dc="http://purl.org/dc/elements/1.1/" 
+  xmlns:atom="http://www.w3.org/2005/Atom" 
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+  xmlns:media="http://search.yahoo.com/mrss/">
+  <channel>
+    <title>Math on Hegzploit</title>
+    <link>http://localhost:1313/tags/math/</link>
+    <description>Recent content in Math on Hegzploit</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>me (AT) this domain (Yusuf Hegazy)</managingEditor>
+    <webMaster>me (AT) this domain (Yusuf Hegazy)</webMaster>
+    <copyright>&amp;copy;{year}, All Rights Reserved</copyright>
+    <lastBuildDate>Thu, 01 Apr 2021 20:19:31 +0200</lastBuildDate>
+    <sy:updatePeriod>weekly</sy:updatePeriod>
+    
+        <atom:link href="http://localhost:1313/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    
+      <item>
+        <title>A Journey into Mathematical Logic: Diophantus of Alexandria</title>
+        <link>http://localhost:1313/posts/diophantus/</link>
+        <pubDate>Thu, 01 Apr 2021 20:19:31 +0200</pubDate>
+        <author>me (AT) this domain (Yusuf Hegazy)</author>
+        <atom:modified>Thu, 01 Apr 2021 20:19:31 +0200</atom:modified>
+        <guid>http://localhost:1313/posts/diophantus/</guid>
+        <description>&lt;p&gt;In this series of blog posts, I will be discussing some of my favorite topics in math, It mostly falls under the domains of mathematical logic and computability theory.&lt;/p&gt;
+&lt;h2 id=&#34;diophantus-of-alexandria&#34;&gt;Diophantus of Alexandria&lt;/h2&gt;
+&lt;p&gt;Diophantus was a Greek mathematician that flourished around 250 AD, he is most famous for his book &amp;ldquo;Arithmetica&amp;rdquo; in which he had compiled 130 algebraic problems among thirteen books where most of their solutions were positive integers, and that&amp;rsquo;s why mathematicians call such algebraic equations as &amp;ldquo;Diophantine Equations&amp;rdquo;.&lt;/p&gt;</description>
+        
+        <dc:creator>Yusuf Hegazy</dc:creator>
+        <media:content url="http://localhost:1313/images/header/diophantus_header.jpg" medium="image"><media:title type="html">featured image</media:title></media:content>
+        
+        
+        
+          
+            
+              <category>math</category>
+            
+          
+        
+        
+        
+      </item>
+    
+  </channel>
+</rss>

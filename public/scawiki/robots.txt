@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: sc-wiki.hegz.io/sitemap.xml
