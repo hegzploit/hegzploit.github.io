@@ -5,7 +5,7 @@ description: Photo Gallery
 draft: true
 type: gallery
 mode: one-by-one
-description: "photo gallery"
+# description: "photo gallery"
 images:
   - image: beach.jpg
     caption: beach, women, car
