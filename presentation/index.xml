@@ -1,1 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Presentations on Hegzploit</title><link>https://hegzploit.github.io/presentation/</link><description>Recent content in Presentations on Hegzploit</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>me (AT) this domain (Yusuf Hegazy)</managingEditor><webMaster>me (AT) this domain (Yusuf Hegazy)</webMaster><copyright>©2025, All Rights Reserved</copyright><lastBuildDate>Wed, 30 Oct 2019 20:48:10 +0900</lastBuildDate><sy:updatePeriod>weekly</sy:updatePeriod><atom:link href="https://hegzploit.github.io/presentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Fourth</title><link>https://hegzploit.github.io/presentation/dir/fourth/</link><pubDate>Wed, 30 Oct 2019 20:48:10 +0900</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Wed, 30 Oct 2019 20:48:10 +0900</atom:modified><guid>https://hegzploit.github.io/presentation/dir/fourth/</guid><description/><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/feature1/number-four.png" medium="image"><media:title type="html">featured image</media:title></media:content></item><item><title>Third</title><link>https://hegzploit.github.io/presentation/third/</link><pubDate>Wed, 30 Oct 2019 20:46:30 +0900</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Wed, 30 Oct 2019 20:46:30 +0900</atom:modified><guid>https://hegzploit.github.io/presentation/third/</guid><description/><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/feature1/number-three.png" medium="image"><media:title type="html">featured image</media:title></media:content></item><item><title>Second</title><link>https://hegzploit.github.io/presentation/second/</link><pubDate>Wed, 30 Oct 2019 20:45:24 +0900</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Wed, 30 Oct 2019 20:45:24 +0900</atom:modified><guid>https://hegzploit.github.io/presentation/second/</guid><description/><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/feature1/number-two.png" medium="image"><media:title type="html">featured image</media:title></media:content></item><item><title>First</title><link>https://hegzploit.github.io/presentation/first/</link><pubDate>Wed, 30 Oct 2019 19:45:20 +0900</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Wed, 30 Oct 2019 19:45:20 +0900</atom:modified><guid>https://hegzploit.github.io/presentation/first/</guid><description/><dc:creator>Yusuf Hegazy</dc:creator><media:content url="https://hegzploit.github.io/images/feature1/number-one.png" medium="image"><media:title type="html">featured image</media:title></media:content></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:media="http://search.yahoo.com/mrss/"><channel><title>Presentations on Hegzploit</title><link>https://hegzploit.github.io/presentation/</link><description>Recent content in Presentations on Hegzploit</description><generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>me (AT) this domain (Yusuf Hegazy)</managingEditor><webMaster>me (AT) this domain (Yusuf Hegazy)</webMaster><copyright>©2026, All Rights Reserved</copyright><lastBuildDate>Wed, 30 Oct 2019 20:48:10 +0900</lastBuildDate><sy:updatePeriod>weekly</sy:updatePeriod><atom:link href="https://hegzploit.github.io/presentation/index.xml" rel="self" type="application/rss+xml"/><item><title>Fourth</title><link>https://hegzploit.github.io/presentation/dir/fourth/</link><pubDate>Wed, 30 Oct 2019 20:48:10 +0900</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Wed, 30 Oct 2019 20:48:10 +0900</atom:modified><guid>https://hegzploit.github.io/presentation/dir/fourth/</guid><description/><dc:creator>Yusuf Hegazy</dc:creator><category>map[series:[map[categories:[map[highlightTheme:monokai image:images/feature1/number-four.png plugins:[highlight zoom notes math] reveal:[map[main:[map[sub:[# Hugo
+## The world’s fastest framework for building websites
+]] map[sub:[Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.
+]]]] map[main:[map[sub:[# Reveal.js
+## A framework for easily creating beautiful presentations using HTML.
+- [Check out the live demo](https://revealjs.com/#/)
+]]]] map[main:[map[sub:[You can easily create presentation documents using Markdown.
+]]]] map[fragment:[map[sub:[# here
+]] map[sub:[#### you
+]] map[sub:[#### go
+]]]] map[main:[map[sub:[# POINT OF VIEW
+Press *ESC* to enter the slide overview.
+Hold down the alt key (ctrl in Linux) and click on any element to zoom towards it using zoom.js. click again to zoom back out.
+(NOTE\: Use ctrl + click in Linux)
+]]]] map[fragment:[map[sub:[## FRAGMENTS
+]] map[sub:[Hit the next arrow...
+]] map[sub:[... to step through ...
+]] map[sub:[.. a
+]] map[sub:[.. a fragmented
+]] map[sub:[.. a fragmented slide.
+]]]]] revealBackgroundColor: revealBackgroundImage: revealBackgroundOpacity: revealBackgroundPosition: revealBackgroundRepeat: revealBackgroundSize: revealBackgroundVideo: revealBackgroundVideoLoop:false revealBackgroundVideoMuted:false revealTheme:bagie]]]]]</category></item><item><title>Third</title><link>https://hegzploit.github.io/presentation/third/</link><pubDate>Wed, 30 Oct 2019 20:46:30 +0900</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Wed, 30 Oct 2019 20:46:30 +0900</atom:modified><guid>https://hegzploit.github.io/presentation/third/</guid><description/><dc:creator>Yusuf Hegazy</dc:creator><category>map[series:[map[categories:[map[highlightTheme:monokai image:images/feature1/number-three.png plugins:[highlight zoom math] reveal:[map[main:[map[sub:[## Syntax highlighting
+```go
+// If an unknown or empty style is provided, AP style is what you get.
+func GetTitleFunc(style string) func(s string) string {
+switch strings.ToLower(style) {
+case "go":
+return strings.Title
+case "chicago":
+return transform.NewTitleConverter(transform.ChicagoStyle)
+default:
+return transform.NewTitleConverter(transform.APStyle)
+}
+}
+```
+]]]] map[main:[map[sub:[## Mathjax 1
+\\[\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix}
+\mathbf{i} &amp;amp; \mathbf{j} &amp;amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;amp; \frac{\partial Y}{\partial u} &amp;amp; 0 \\
+\frac{\partial X}{\partial v} &amp;amp; \frac{\partial Y}{\partial v} &amp;amp; 0
+\end{vmatrix} \\]
+]]]] map[main:[map[sub:[## Mathjax 2
+\\[\begin{aligned}
+\dot{x} &amp;amp; = \sigma(y-x) \\
+\dot{y} &amp;amp; = \rho x - y - xz \\
+\dot{z} &amp;amp; = -\beta z + xy
+\end{aligned} \\]
+]]]] map[main:[map[sub:[## Mathjax 3
+\\[P(E) = {n \choose k} p^k (1-p)^{ n-k} \\]
+]]]] map[main:[map[sub:[## Mathjax 4
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+]]]]] revealBackgroundColor: revealBackgroundImage: revealBackgroundOpacity: revealBackgroundPosition: revealBackgroundRepeat: revealBackgroundSize: revealBackgroundVideo: revealBackgroundVideoLoop:false revealBackgroundVideoMuted:false revealTheme:league]]]]]</category></item><item><title>Second</title><link>https://hegzploit.github.io/presentation/second/</link><pubDate>Wed, 30 Oct 2019 20:45:24 +0900</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Wed, 30 Oct 2019 20:45:24 +0900</atom:modified><guid>https://hegzploit.github.io/presentation/second/</guid><description/><dc:creator>Yusuf Hegazy</dc:creator><category>map[series:[map[categories:[map[image:images/feature1/number-two.png reveal:[map[main:[map[sub:[test 1
+]]]] map[main:[map[sub:[test 2
+]]]]] revealBackgroundColor: revealBackgroundImage: revealBackgroundOpacity: revealBackgroundPosition: revealBackgroundRepeat: revealBackgroundSize: revealBackgroundVideo: revealBackgroundVideoLoop:false revealBackgroundVideoMuted:false]]]]]</category></item><item><title>First</title><link>https://hegzploit.github.io/presentation/first/</link><pubDate>Wed, 30 Oct 2019 19:45:20 +0900</pubDate><author>me (AT) this domain (Yusuf Hegazy)</author><atom:modified>Wed, 30 Oct 2019 19:45:20 +0900</atom:modified><guid>https://hegzploit.github.io/presentation/first/</guid><description/><dc:creator>Yusuf Hegazy</dc:creator><category>map[series:[map[categories:[map[image:images/feature1/number-one.png reveal:[map[main:[map[sub:[test 1
+]]]] map[main:[map[sub:[test 2
+]]]]] revealBackgroundColor: revealBackgroundImage: revealBackgroundOpacity: revealBackgroundPosition: revealBackgroundRepeat: revealBackgroundSize: revealBackgroundVideo: revealBackgroundVideoLoop:false revealBackgroundVideoMuted:false]]]]]</category></item></channel></rss>
